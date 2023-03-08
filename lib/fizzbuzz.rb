@@ -1,11 +1,11 @@
 def fizzbuzz(number)
-  if number == 3
-    'fizz'
-  elsif number == 5
-    'buzz'
-  elsif number == 15
+  if number % 15 == 0
     'fizzbuzz'
-  elsif number == 7
-    7
+  elsif number % 5 == 0
+    'buzz'
+  elsif number % 3 == 0
+    'fizz'
+  else
+    number
   end
 end
